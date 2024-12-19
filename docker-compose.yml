@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - '8000:8000' # Map backend HTTP port
+      - '8080:8080' # Map WebSocket port
+    volumes:
+      - ./backend:/src
+    depends_on:
+      - frontend
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - '3000:3000' # Map frontend port
+    volumes:
+      - ./frontend:/src
