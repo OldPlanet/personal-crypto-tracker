@@ -1,6 +1,4 @@
-# Overall Project README
-
-## Real-Time Cryptocurrency Dashboard
+# Real-Time Cryptocurrency Dashboard
 This project is a real-time cryptocurrency dashboard that uses Binance API to fetch and display trading pairs and ticker data. It consists of a **backend** (Node.js and Express.js) and a **frontend** (React) application. The backend also includes WebSocket functionality to provide live updates to clients.
 
 ### Features
